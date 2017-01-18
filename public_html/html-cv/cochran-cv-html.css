@@ -1,0 +1,52 @@
+/* Century Schoolbook font is very similar to Computer Modern Math: cmmi */
+.MATH    { font-family: "Century Schoolbook", serif; }
+.MATH I  { font-family: "Century Schoolbook", serif; font-style: italic }
+.BOLDMATH { font-family: "Century Schoolbook", serif; font-weight: bold }
+
+/* implement both fixed-size and relative sizes */
+SMALL.XTINY		{ font-size : xx-small }
+SMALL.TINY		{ font-size : x-small  }
+SMALL.SCRIPTSIZE	{ font-size : smaller  }
+SMALL.FOOTNOTESIZE	{ font-size : small    }
+SMALL.SMALL		{  }
+BIG.LARGE		{  }
+BIG.XLARGE		{ font-size : large    }
+BIG.XXLARGE		{ font-size : x-large  }
+BIG.HUGE		{ font-size : larger   }
+BIG.XHUGE		{ font-size : xx-large }
+
+/* heading styles */
+H1		{  }
+H2		{  }
+H3		{  }
+H4		{  }
+H5		{  }
+
+/* mathematics styles */
+DIV.displaymath		{ }	/* math displays */
+TD.eqno			{ }	/* equation-number cells */
+
+
+/* document-specific styles come next */
+DIV.navigation		{   }
+DIV.centerline		{   }
+SPAN.sc		{   }
+SPAN.arabic		{   }
+SPAN.textit		{ font-style: italic  }
+#par1		{   }
+#par2		{   }
+#par31		{   }
+BODY { font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+       display:block; clear:left; margin:3em; max-width:850px; 
+       counter-reset: pubs; }
+OL LI { counter-increment(pubs);}
+OL LI:before {  counter-increment: pubs; content: "[" counter(pubs) "] " ;}
+OL LI {  list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 0em;}
+UL LI {  list-style-type: none; }
+H1 { font-size: 20px; color:#006795; }
+H2 { font-size: 16px; }
+H3 { font-size: 14px; }
+SPAN.textit { font-style: italic  }
+BIG.XXLARGE { font-size : x-large; color:#006795;  }
+
+

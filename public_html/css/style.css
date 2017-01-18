@@ -1,0 +1,18 @@
+body { font-family: -apple-system,".SFNSText-Regular","Helvetica Neue","Roboto",Helvetica,Arial,"Lucida Grande",sans-serif; -webkit-font-smoothing: antialiased; font-weight:300; font-size:1.1em; line-height:1.3em; margin:0; padding:0; }
+h1, h2 { font-weight:600; line-height:1em; margin-top:0; margin-bottom:0.4em; }
+a { font-weight:300; color: #002654; text-decoration: none; } a:hover { text-decoration: underline; }
+.section { display:block; clear:left; margin:3em; max-width:750px; }
+.info { float:left; margin-bottom:1em; }
+.contact { font-size:0.9em; }
+.photo { float:left; margin-top:0.3em; margin-bottom:2em; margin-right:3em; }
+.photo img { border: 1px solid #7BAFD4; }
+.badges { margin-top:0.5em; vertical-align: middle; }
+img.badge { opacity: 0.5; -filter:grayscale(100%); -webkit-filter:grayscale(100%); border: 0px; } img.badge:hover { opacity: 1.0; }
+ul li { margin-bottom:1.5em; list-style: square ; color: #7BAFD4; }
+ul li span { color: black; }
+ul li span p img {
+    float: right;
+    border: 1px dotted black;
+    margin: 0px 0px 25px 25px;
+} 
+@media (max-width: 480px) { body { font-size:0.9em; } .section { margin:1em; } img.badge { height:32px; padding-top:1em; } ul li span p img { float: none; margin: 20px 20px 20px 0px; } .interest-desc { display:inline-block; } }
