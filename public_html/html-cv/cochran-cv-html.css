@@ -358,3 +358,59 @@ H3 { font-size: 14px; }
 SPAN.textit { font-style: italic  }
 BIG.XXLARGE { font-size : x-large; color:#006795;  }
 
+BODY { font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+       display:block; clear:left; margin:3em; max-width:750px; 
+       counter-reset: pubs; text-align:justify; }
+OL LI { counter-increment(pubs);}
+OL LI:before {  counter-increment: pubs; content: "[" counter(pubs) "] " ;}
+OL LI {  list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 0em;}
+UL LI { padding-top:5px;  list-style-type: none; }
+UL LI UL LI {  list-style-type: disc; }
+H1 { font-size: 20px; color:#006795; }
+H2 { font-size: 16px; }
+H3 { font-size: 14px; }
+SPAN.textit { font-style: italic  }
+BIG.XXLARGE { font-size : x-large; color:#006795;  }
+
+BODY { font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+       display:block; clear:left; margin:3em; max-width:750px; 
+       counter-reset: pubs; text-align:justify; }
+OL LI { counter-increment(pubs);}
+OL LI:before {  counter-increment: pubs; content: "[" counter(pubs) "] " ;}
+OL LI {  list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 0em;}
+UL LI { padding-top:5px;  list-style-type: none; }
+UL LI UL LI {  list-style-type: disc; }
+H1 { font-size: 20px; color:#006795; }
+H2 { font-size: 16px; }
+H3 { font-size: 14px; }
+SPAN.textit { font-style: italic  }
+BIG.XXLARGE { font-size : x-large; color:#006795;  }
+
+BODY { font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+       display:block; clear:left; margin:3em; max-width:750px; 
+       counter-reset: pubs; text-align:justify; }
+OL LI { counter-increment(pubs);}
+OL LI:before {  counter-increment: pubs; content: "[" counter(pubs) "] " ;}
+OL LI {  list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 0em;}
+UL LI { padding-top:5px;  list-style-type: none; }
+UL LI UL LI {  list-style-type: disc; }
+H1 { font-size: 20px; color:#006795; }
+H2 { font-size: 16px; }
+H3 { font-size: 14px; }
+SPAN.textit { font-style: italic  }
+BIG.XXLARGE { font-size : x-large; color:#006795;  }
+
+BODY { font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+       display:block; clear:left; margin:3em; max-width:750px; 
+       counter-reset: pubs; text-align:justify; }
+OL LI { counter-increment(pubs);}
+OL LI:before {  counter-increment: pubs; content: "[" counter(pubs) "] " ;}
+OL LI {  list-style-type: none; list-style-position: inside; text-indent: -1.5em; padding-left: 0em;}
+UL LI { padding-top:5px;  list-style-type: none; }
+UL LI UL LI {  list-style-type: disc; }
+H1 { font-size: 20px; color:#006795; }
+H2 { font-size: 16px; }
+H3 { font-size: 14px; }
+SPAN.textit { font-style: italic  }
+BIG.XXLARGE { font-size : x-large; color:#006795;  }
+
