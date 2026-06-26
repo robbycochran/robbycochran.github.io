@@ -6,7 +6,7 @@
 
 I work on the parts of security products where systems behavior, developer workflow, and product judgment meet.
 
-At Red Hat, I lead a small C++/Go/Rust team on Advanced Cluster Security. Recent work has been around runtime signals, Kubernetes and OpenShift, eBPF observability, and safer ways to use agents inside engineering workflows.
+At Red Hat, I work on Advanced Cluster Security with a C++/Go/Rust team. Recent work has been around runtime signals, Kubernetes and OpenShift, eBPF observability, and safer ways to use agents inside engineering workflows.
 
 My background is in software verification and distributed systems: a PhD from UNC on symbolic verification of remote client behavior, then StackRox from early startup through acquisition. I am drawn to teams that value clear thinking, close contact with users, and software that survives contact with production.
 
