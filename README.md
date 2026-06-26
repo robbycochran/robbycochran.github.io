@@ -8,6 +8,13 @@ The website is generated from `content/cv.md`:
 make site
 ```
 
+The one-page resume content is kept as Markdown and PDF:
+
+```text
+content/resume.md
+pdf/robby_cochran_resume_latex.pdf
+```
+
 The full LaTeX CV source is generated from the same Markdown:
 
 ```bash
