@@ -132,8 +132,8 @@ ${body}
   </main>
   <header class="site-header" aria-label="Site">
     <nav aria-label="Links">
-      <span>resume [<a href="pdf/robby_cochran_resume_latex.pdf">pdf</a>/<a href="content/resume.md">md</a>]</span>
-      <span>cv [<a href="pdf/robby_cochran_cv_latex.pdf">pdf</a>/<a href="content/cv.md">md</a>]</span>
+      <a href="pdf/robby_cochran_resume_latex.pdf">resume</a>
+      <a href="pdf/robby_cochran_cv_latex.pdf">cv</a>
       <a href="https://github.com/robbycochran">github</a>
       <a href="https://www.linkedin.com/in/robertacochran">linkedin</a>
       <a href="https://x.com/robbycochran">twitter</a>
