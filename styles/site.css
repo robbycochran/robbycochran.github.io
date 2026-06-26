@@ -77,23 +77,6 @@ footer {
   color: var(--bg);
 }
 
-.masthead {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) max-content;
-  gap: 0 24px;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-}
-
-.wordmark {
-  grid-column: 1 / -1;
-  text-decoration: none;
-}
-
-.wordmark span {
-  color: var(--accent);
-}
-
 nav {
   display: flex;
   flex-wrap: wrap;
