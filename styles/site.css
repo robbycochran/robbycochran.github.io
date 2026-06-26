@@ -1,11 +1,13 @@
 :root {
   color-scheme: light dark;
-  --bg: #f4f1e8;
-  --fg: #11110f;
-  --muted: #686252;
-  --line: #cbc4b3;
-  --accent: #0f6f64;
-  --accent-2: #9f3f26;
+  --bg: #cfd0c6;
+  --fg: #1f1d19;
+  --muted: #625f56;
+  --line: #a9aaa0;
+  --stripe-dark: #4c493f;
+  --stripe-navy: #394565;
+  --accent: #4fb8b0;
+  --accent-2: #c99d91;
   --measure: 730px;
 }
 
@@ -20,7 +22,18 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(90deg, color-mix(in srgb, var(--line) 34%, transparent) 1px, transparent 1px) 0 0 / 16px 16px,
+    linear-gradient(90deg,
+      transparent 0 74px,
+      color-mix(in srgb, var(--accent) 34%, transparent) 74px 76px,
+      color-mix(in srgb, var(--stripe-dark) 30%, transparent) 76px 81px,
+      color-mix(in srgb, var(--accent) 26%, transparent) 81px 82px,
+      transparent 82px 196px,
+      color-mix(in srgb, var(--accent-2) 32%, transparent) 196px 198px,
+      color-mix(in srgb, var(--stripe-navy) 34%, transparent) 198px 204px,
+      color-mix(in srgb, var(--accent-2) 24%, transparent) 204px 206px,
+      transparent 206px 312px) 0 0 / 312px 100%,
+    linear-gradient(90deg, color-mix(in srgb, var(--stripe-dark) 11%, transparent) 1px, transparent 1px) 0 0 / 16px 16px,
+    linear-gradient(0deg, color-mix(in srgb, white 14%, transparent) 1px, transparent 1px) 0 0 / 100% 5px,
     var(--bg);
   color: var(--fg);
   font-family: ui-monospace, "SFMono-Regular", "Berkeley Mono", Menlo, Consolas, "Liberation Mono", monospace;
@@ -249,11 +262,13 @@ footer::before {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #11110f;
-    --fg: #ece8db;
-    --muted: #9c9482;
-    --line: #383326;
-    --accent: #69bfb3;
-    --accent-2: #e18c63;
+    --bg: #1f1d19;
+    --fg: #e3e1d6;
+    --muted: #aba79a;
+    --line: #625f56;
+    --stripe-dark: #302a24;
+    --stripe-navy: #5e6b91;
+    --accent: #64c8c0;
+    --accent-2: #d8aa9e;
   }
 }
