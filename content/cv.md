@@ -6,7 +6,7 @@ San Francisco, CA / [kudzoo@gmail.com](mailto:kudzoo@gmail.com) / [robbycochran.
 
 ## Profile
 
-Technical engineering leader and security systems researcher with a PhD in computer science and a publication record across NDSS, NSDI, POPL, and TISSEC. Work spans symbolic verification of remote client behavior, program synthesis, Kubernetes runtime security, eBPF-based observability, enterprise product architecture, engineering management, customer/design-partner strategy, and current ACS agentic foundations: secure harness primitives, skills strategy, support triage automation, internal hackathon leadership, and CI-tested agent workflows.
+Technical engineering leader and security systems researcher with a PhD in computer science and a publication record across NDSS, NSDI, POPL, and TISSEC. Work spans symbolic verification of remote client behavior, program synthesis, Kubernetes runtime security, eBPF-based observability, enterprise product architecture, engineering management of a five-engineer C++/Go/Rust team, customer/design-partner strategy, product strategy, and current ACS agentic foundations: secure harness primitives, skills strategy, support triage automation, internal hackathon leadership, and CI-tested agent workflows.
 
 ## Interests
 
@@ -19,6 +19,7 @@ Runtime security and behavioral detection, Kubernetes / OpenShift / RHACS, eBPF 
 *San Francisco, CA / Remote | 2021 - Present*
 
 - Lead runtime-security product and architecture work across RHACS process activity, network security, file activity, behavioral baselines, runtime anomaly detection, Kubernetes-native policy workflows, and analyst/developer experience.
+- Lead a team of five C++/Go/Rust engineers and balance people management, architecture, product strategy, and hands-on technical direction.
 - Drive eBPF-based runtime visibility design for OpenShift/Kubernetes environments, including collection semantics, policy exceptions, performance constraints, platform support, and low false-positive detection goals.
 - Lead ACS agentic foundations: internal hackathon, CI tooling, support triage bots, skills strategy, secure harness primitives, and developer paths from local sandbox to OpenShift execution.
 - Build and guide secure AI-agent infrastructure patterns through harness-openshell: declarative agent workflows, provider/credential boundaries, inference routing, policy-aware sandbox execution, and repeatable CI validation.
