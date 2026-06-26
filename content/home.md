@@ -1,17 +1,13 @@
 # Robby Cochran
 
+<nav aria-label="Links"><a href="pdf/robby_cochran_resume_latex.pdf">resume</a><a href="pdf/robby_cochran_cv_latex.pdf">cv</a><a href="https://github.com/robbycochran">github</a><a href="https://www.linkedin.com/in/robertacochran">linkedin</a><a href="https://x.com/robbycochran">twitter</a></nav>
+
 ![Robby Cochran portrait](images/robby-film.jpg)
 
-Technical engineering leader working across security systems, Kubernetes, software verification, and AI-agent infrastructure.
+Robby Cochran is a technical engineering leader and systems/security researcher in San Francisco. He works on Kubernetes runtime security, eBPF observability, developer platforms, and AI-agent infrastructure.
 
-I lead a five-engineer C++/Go/Rust team on Red Hat Advanced Cluster Security, with work spanning runtime detection, eBPF observability, product strategy, customer/design-partner feedback, and secure agent workflows.
+He currently leads a five-engineer C++/Go/Rust team on Red Hat Advanced Cluster Security. His work spans product strategy, customer and design-partner feedback, secure execution harnesses, support automation, and the messy boundary between research ideas and shipped enterprise systems.
 
-I am interested in engineering leadership, Staff+/Principal, forward-deployed engineering, and founder-path roles where product judgment and deep systems work reinforce each other.
-
-- Runtime security for Kubernetes and OpenShift.
-- AI-agent infrastructure: harnesses, secure execution paths, evaluation workflows, and support automation.
-- Product strategy at the boundary of developer platforms, security operations, and enterprise adoption.
-
-<nav aria-label="Links"><a href="pdf/robby_cochran_resume_latex.pdf">resume</a><a href="pdf/robby_cochran_cv_latex.pdf">cv</a><a href="https://github.com/robbycochran">github</a><a href="https://www.linkedin.com/in/robertacochran">linkedin</a><a href="https://x.com/robbycochran">twitter</a></nav>
+Before StackRox and Red Hat, he completed a PhD in computer science at UNC Chapel Hill, studying symbolic verification of remote client behavior in distributed systems. He is interested in roles and projects where product judgment, customer proximity, and deep systems work reinforce each other.
 
 _Last updated: June 2026._
