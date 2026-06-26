@@ -1,0 +1,261 @@
+% Generated from content/cv.md. Edit the Markdown source, then run make cv-tex.
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.72in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=2pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{15pt}{5pt}
+\titlespacing*{\subsection}{0pt}{9pt}{1pt}
+\newcommand{\cvtitle}[1]{{\Huge\bfseries #1}\vspace{3pt}}
+
+\begin{document}
+\cvtitle{Robert A. Cochran III}
+
+Security researcher and engineering leader | runtime security, Kubernetes, software verification, AI-agent infrastructure
+
+San Francisco, CA / \href{mailto:kudzoo@gmail.com}{kudzoo@gmail.com} / \href{https://www.robbycochran.com/}{robbycochran.com} / \href{https://github.com/robbycochran}{GitHub} / \href{https://scholar.google.com/citations?user=qW0wkZIAAAAJ\&hl=en}{Google Scholar} / \href{https://www.linkedin.com/in/robertacochran}{LinkedIn}
+
+\section*{Profile}
+
+Security researcher and engineering leader with a PhD in computer science and a publication record across NDSS, NSDI, POPL, and TISSEC. Work spans symbolic verification of remote client behavior, program synthesis, Kubernetes runtime security, eBPF-based observability, enterprise product architecture, engineering management, and current ACS agentic foundations: secure harness primitives, skills strategy, support triage automation, internal hackathon leadership, and CI-tested agent workflows.
+
+\section*{Interests}
+
+Runtime security and behavioral detection, Kubernetes / OpenShift / RHACS, eBPF observability, Software verification and formal methods, Symbolic execution, Program synthesis, AI-agent safety and secure harnesses, Policy-as-code and detection layering, Developer/security workflows
+
+\section*{Experience and research record}
+
+\subsection*{IBM / Red Hat - Red Hat Advanced Cluster Security (RHACS / ACS) — Staff Engineer / Engineering Manager}
+
+\emph{San Francisco, CA / Remote | 2021 - Present}
+
+\begin{itemize}
+
+  \item Lead runtime-security product and architecture work across RHACS process activity, network security, file activity, behavioral baselines, runtime anomaly detection, Kubernetes-native policy workflows, and analyst/developer experience.
+
+  \item Drive eBPF-based runtime visibility design for OpenShift/Kubernetes environments, including collection semantics, policy exceptions, performance constraints, platform support, and low false-positive detection goals.
+
+  \item Lead ACS agentic foundations: internal hackathon, CI tooling, support triage bots, skills strategy, secure harness primitives, and developer paths from local sandbox to OpenShift execution.
+
+  \item Build and guide secure AI-agent infrastructure patterns through harness-openshell: declarative agent workflows, provider/credential boundaries, inference routing, policy-aware sandbox execution, and repeatable CI validation.
+
+  \item Work with large enterprise customers and design partners to translate deployment constraints into roadmap decisions around scale, compliance, architecture, performance, IBM Power/Z support, and field-support workflows.
+
+  \item Managed distributed engineering teams while remaining close to architecture and implementation; promoted L4 and L5 engineers through scope design, calibrated feedback, and career planning.
+
+  \item Shaped OpenShift-first RHACS strategy around console integration, RBAC alignment, GitOps/policy-as-code, developer experience, runtime observability, and AI-assisted workflows.
+
+  \item Outputs from this period:
+
+  \item \href{https://github.com/stackrox/harness-openshell}{Proof object: harness-openshell - declarative configuration harness for OpenShell AI agent sandboxes.}
+
+  \item \href{https://patents.justia.com/patent/11811804}{Patent: US 11,811,804, "System and method for detecting process anomalies in a distributed computation system utilizing containers"; Red Hat assignee; named inventor.}
+
+  \item \href{https://speakerdeck.com/redhatlivestreaming/stackrox-community-office-hours-e2-ebpf-101-implementing-security-and-monitoring-kubernetes}{Public talk: eBPF 101: implementing security and monitoring in Kubernetes.}
+
+\end{itemize}
+
+\subsection*{StackRox, Inc. (acquired by Red Hat) — Member of Technical Staff / Senior Software Engineer / Staff Software Engineer}
+
+\emph{Mountain View, CA | May 2017 - 2021}
+
+\begin{itemize}
+
+  \item Joined an early-stage Kubernetes security startup and built runtime detection and enforcement features for containerized workloads and Kubernetes clusters.
+
+  \item Advanced core runtime-security capabilities including baseline-driven detection, process and network visibility, and connections between observed runtime behavior and security policy.
+
+  \item Worked across product, engineering, and customer-driven security cases with large design partners, helping mature the platform through acquisition by Red Hat.
+
+  \item Contributed through the StackRox/RHACS product arc from early startup product to enterprise OpenShift security portfolio; product context included \$0 to \$50M+ revenue and 100+ releases.
+
+  \item Outputs from this period:
+
+  \item \href{https://www.redhat.com/en/blog/faq-red-hat-acquire-stackrox}{Company milestone: StackRox acquisition by Red Hat.}
+
+  \item \href{https://www.redhat.com/en/technologies/cloud-computing/openshift/advanced-cluster-security-kubernetes}{Product: Red Hat Advanced Cluster Security for Kubernetes.}
+
+  \item \href{https://www.youtube.com/watch?v=LFqWl7XB5Gc}{Public talk: Listen to your Engine: Unearthing Security Signals from the Modern Linux Kernel. BSidesSF 2018.}
+
+\end{itemize}
+
+\subsection*{University of North Carolina at Chapel Hill — Research Assistant, Computer Security and Software Verification}
+
+\emph{Chapel Hill, NC | 2008 - 2016}
+
+\begin{itemize}
+
+  \item Developed symbolic client verification: server-side methods for checking whether observed client network traffic could have been produced by sanctioned software.
+
+  \item Built and evaluated symbolic-execution systems for online games, cryptographic clients, and distributed applications, including OpenSSL/Heartbleed-style client-misbehavior detection.
+
+  \item Investigated data-driven symbolic execution using instruction traces, clustering, and novel metrics; refactored KLEE symbolic execution internals for thread-level parallelism and many-core execution.
+
+  \item Research outputs included NDSS 2010 Best Paper, NDSS 2013, NSDI 2017, ACM TISSEC 2011, and dissertation work on remote client behavior.
+
+  \item Outputs from this period:
+
+  \item \href{https://cdr.lib.unc.edu/concern/dissertations/p8418p298}{Dissertation: Symbolic Verification of Remote Client Behavior in Distributed Systems.}
+
+  \item \href{https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/chi}{A System to Verify Network Behavior of Known Cryptographic Clients. NSDI 2017.}
+
+  \item \href{https://www.ndss-symposium.org/ndss-2013-programme/toward-online-verification-client-behavior-distributed-applications/}{Toward Online Verification of Client Behavior in Distributed Applications. NDSS 2013.}
+
+  \item \href{https://www.ndss-symposium.org/wp-content/uploads/2017/09/beth.pdf}{Server-side Verification of Client Behavior in Online Games. NDSS 2010 Best Paper; ACM TISSEC 2011 journal version.}
+
+\end{itemize}
+
+\subsection*{Microsoft Research - Research in Software Engineering (RiSE) — Research Intern with Dr. Ben Livshits}
+
+\emph{Redmond, WA | Summer 2013}
+
+\begin{itemize}
+
+  \item Designed a program-synthesis workflow combining symbolic automata, genetic programming, and online workers to improve regular expressions from examples and human feedback.
+
+  \item Outputs from this period:
+
+  \item \href{https://www.microsoft.com/en-us/research/publication/program-boosting-program-synthesis-via-crowd-sourcing/}{Publication: Program Boosting: Program Synthesis via Crowd-Sourcing. POPL 2015.}
+
+  \item \href{https://patents.google.com/patent/US9753696B2}{Patent: US 9,753,696, "Program boosting including using crowdsourcing for correctness"; Microsoft Technology Licensing assignee; named inventor.}
+
+\end{itemize}
+
+\subsection*{Intel Corporation - Visual Computing Group — Software Engineer}
+
+\emph{Hillsboro, OR | 2006 - 2007}
+
+\begin{itemize}
+
+  \item Built graphics-hardware analysis tooling to interpret, record, and replay Direct3D/OpenGL API calls for performance analysis of prototype visual-computing hardware.
+
+\end{itemize}
+
+\subsection*{Clemson University — Undergraduate Researcher}
+
+\emph{Clemson, SC | 2005 - 2006}
+
+\begin{itemize}
+
+  \item Designed and implemented GPU-based rendering research on second-order illumination and built network-simulation tooling for DOCSIS MAC-layer analysis.
+
+  \item Outputs from this period:
+
+  \item \href{https://www.robbycochran.com/pdf/ACMSE07.pdf}{Publication: Second-order Illumination in Real-Time. ACM Southeast 2007; Best Paper.}
+
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+
+  \item \textbf{PhD, Computer Science}, University of North Carolina at Chapel Hill, 2016.
+
+  \item Thesis: Symbolic Verification of Remote Client Behavior in Distributed Systems
+
+  \item Advisor: Prof. Michael K. Reiter
+
+  \item \textbf{BS, Computer Science, Magna Cum Laude}, Clemson University, 2006.
+
+  \item Outstanding Senior in Computer Science; Donald A. Norton Computer Science Scholarship; Upsilon Pi Epsilon Honor Society
+
+\end{itemize}
+
+\section*{Publications}
+
+\begin{itemize}
+
+  \item \href{https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/chi}{A. Chi, R. Cochran, M. Nesfield, M. K. Reiter, C. Sturton. "A System to Verify Network Behavior of Known Cryptographic Clients." USENIX NSDI, 2017.} \emph{Origin: UNC.}
+
+  \item \href{https://www.microsoft.com/en-us/research/publication/program-boosting-program-synthesis-via-crowd-sourcing/}{R. Cochran, L. D'Antoni, B. Livshits, M. Veanes. "Program Boosting: Program Synthesis via Crowd-Sourcing." POPL, 2015.} \emph{Origin: Microsoft Research.}
+
+  \item \href{https://www.ndss-symposium.org/ndss-2013-programme/toward-online-verification-client-behavior-distributed-applications/}{R. Cochran, M. K. Reiter. "Toward Online Verification of Client Behavior in Distributed Applications." NDSS, 2013.} \emph{Origin: UNC.}
+
+  \item \href{https://doi.org/10.1145/2043628.2043633}{D. Bethea, R. Cochran, M. K. Reiter. "Server-side Verification of Client Behavior in Online Games." ACM TISSEC, 2011.} \emph{Origin: UNC.}
+
+  \item \href{https://www.ndss-symposium.org/wp-content/uploads/2017/09/beth.pdf}{D. Bethea, R. Cochran, M. K. Reiter. "Server-side Verification of Client Behavior in Online Games." NDSS, 2010. Best Paper.} \emph{Origin: UNC.}
+
+  \item \href{https://www.robbycochran.com/pdf/ACMSE07.pdf}{R. Cochran, J. Steele. "Second-order Illumination in Real-Time." ACM Southeast, 2007. Best Paper.} \emph{Origin: Clemson.}
+
+\end{itemize}
+
+\section*{Patents}
+
+\begin{itemize}
+
+  \item \href{https://patents.justia.com/patent/11811804}{US 11,811,804. "System and method for detecting process anomalies in a distributed computation system utilizing containers." Red Hat, Inc.; filed Dec. 15, 2020; issued Nov. 7, 2023. Named inventor.} \emph{Origin: StackRox / Red Hat.}
+
+  \item \href{https://patents.google.com/patent/US9753696B2}{US 9,753,696. "Program boosting including using crowdsourcing for correctness." Microsoft Technology Licensing LLC; filed Mar. 14, 2014; issued Sept. 5, 2017. Named inventor.} \emph{Origin: Microsoft Research.}
+
+\end{itemize}
+
+\section*{Awards}
+
+\begin{itemize}
+
+  \item Best Paper Award, Network and Distributed System Security Symposium (NDSS), 2010.
+
+  \item Best Paper Award, ACM Southeast Regional Conference, 2007.
+
+  \item Outstanding Senior in Computer Science, Clemson University, 2006.
+
+  \item Donald A. Norton Computer Science Scholarship, Clemson University, 2006.
+
+  \item Upsilon Pi Epsilon Honor Society, Clemson University, 2005.
+
+\end{itemize}
+
+\section*{Service}
+
+\begin{itemize}
+
+  \item External reviewer, ACM Conference on Data and Application Security and Privacy, 2013-2014.
+
+  \item External reviewer, Network and Distributed System Security Symposium, 2013-2014.
+
+\end{itemize}
+
+\section*{Talks and presentations}
+
+\begin{itemize}
+
+  \item \href{https://www.youtube.com/watch?v=LFqWl7XB5Gc}{Listen to your Engine: Unearthing Security Signals from the Modern Linux Kernel. BSidesSF, 2018.} (\href{https://allbsides.com/talk/LFqWl7XB5Gc.html}{AllBSides archive})
+
+  \item \href{https://speakerdeck.com/redhatlivestreaming/stackrox-community-office-hours-e2-ebpf-101-implementing-security-and-monitoring-kubernetes}{eBPF 101: implementing security and monitoring in Kubernetes. StackRox / Red Hat community office hours.}
+
+  \item \href{https://www.ndss-symposium.org/ndss-2013-programme/toward-online-verification-client-behavior-distributed-applications/}{Toward Online Verification of Client Behavior in Distributed Applications. NDSS, San Diego, CA, February 2013.}
+
+  \item \href{https://www.ndss-symposium.org/wp-content/uploads/2017/09/beth.pdf}{Server-side Verification of Client Behavior in Online Games. NDSS, San Diego, CA, February 2010.}
+
+  \item \href{https://www.robbycochran.com/pdf/ACMSE07.pdf}{Introduction to General Purpose GPU (GPGPU) Programming. ACM Southeast Regional Conference, March 2007.}
+
+\end{itemize}
+
+\section*{Technical expertise}
+
+\begin{itemize}
+
+  \item Languages: Go, C, C++, Python, Rust, Bash, Java, C\#, R
+
+  \item Platforms: Kubernetes, OpenShift, RHACS, Docker, Linux, IBM Power, IBM Z
+
+  \item Security / systems: eBPF, runtime detection, behavioral baselines, policy-as-code, LLM gateways, MCP, secure sandboxes, support automation, agent workflows
+
+  \item Research / methods: symbolic execution, software verification, formal methods, program synthesis, SMT/SAT solvers, LLVM, KLEE
+
+\end{itemize}
+
+\emph{Last updated: June 2026.}
+
+\end{document}
