@@ -131,6 +131,9 @@ const document = `<!doctype html>
   <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
+  <main id="top" class="document">
+${body}
+  </main>
   <header class="site-header" aria-label="Site">
     <a class="signal" href="pdf/robby_cochran_resume_latex.pdf">~ SYSTEMS / SECURITY / AGENTS &gt;&gt;</a>
     <div class="masthead">
@@ -147,9 +150,6 @@ const document = `<!doctype html>
       <a href="https://www.linkedin.com/in/robertacochran">linkedin</a>
     </nav>
   </header>
-  <main id="top" class="document">
-${body}
-  </main>
   <footer>
     <span>Rendered from ${escapeHtml(basename(inputPath))}${updated ? `, updated ${escapeHtml(updated)}` : ""}.</span>
   </footer>
