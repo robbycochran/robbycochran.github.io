@@ -105,6 +105,13 @@ function parseBlocks(markdown) {
       continue;
     }
 
+    if (line.trim().startsWith("<nav ")) {
+      flushParagraph();
+      flushList();
+      blocks.push(line.trim());
+      continue;
+    }
+
     flushList();
     paragraph.push(line.trim());
   }
@@ -130,15 +137,6 @@ const document = `<!doctype html>
   <main id="top" class="document">
 ${body}
   </main>
-  <header class="site-header" aria-label="Site">
-    <nav aria-label="Links">
-      <a href="pdf/robby_cochran_resume_latex.pdf">resume</a>
-      <a href="pdf/robby_cochran_cv_latex.pdf">cv</a>
-      <a href="https://github.com/robbycochran">github</a>
-      <a href="https://www.linkedin.com/in/robertacochran">linkedin</a>
-      <a href="https://x.com/robbycochran">twitter</a>
-    </nav>
-  </header>
 </body>
 </html>
 `;

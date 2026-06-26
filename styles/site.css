@@ -52,22 +52,24 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
-.site-header,
 .document {
   width: min(var(--measure), calc(100vw - 32px));
   margin-inline: auto;
-}
-
-.site-header {
-  padding: 6px 0 0;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
-  margin: 0 0 22px;
+  margin: 18px 0 0;
   text-transform: lowercase;
+}
+
+nav::before {
+  flex-basis: 100%;
+  margin-bottom: 8px;
+  color: var(--accent-2);
+  content: "~*~";
 }
 
 nav a,
@@ -139,7 +141,6 @@ h1::after {
 }
 
 h2 {
-  clear: both;
   margin-top: 34px;
   padding-top: 14px;
   border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
@@ -195,8 +196,9 @@ em {
 }
 
 .document > p:last-child em {
+  clear: both;
   display: block;
-  margin-top: 20px;
+  margin-top: 28px;
   color: color-mix(in srgb, var(--muted) 78%, transparent);
   font-size: 11px;
 }
@@ -210,17 +212,12 @@ strong {
     background-size: 12px 12px;
   }
 
-  .site-header,
   .document {
     width: calc(100vw - 24px);
   }
 
-  .masthead {
-    display: block;
-  }
-
   nav {
-    margin-bottom: 44px;
+    margin-top: 18px;
   }
 
   nav a {
