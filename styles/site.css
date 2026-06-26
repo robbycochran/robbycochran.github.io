@@ -3,7 +3,7 @@
   --bg: #fbf8f1;
   --fg: #1f1d19;
   --muted: #6d695e;
-  --line: #ece5d8;
+  --line: #f0eadf;
   --stripe-dark: #8f8c80;
   --accent: #4f9692;
   --accent-2: #bd988f;
@@ -23,8 +23,8 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(90deg, color-mix(in srgb, var(--line) 18%, transparent) 1px, transparent 1px) 0 0 / 24px 24px,
-    linear-gradient(0deg, color-mix(in srgb, white 12%, transparent) 1px, transparent 1px) 0 0 / 100% 8px,
+    linear-gradient(90deg, color-mix(in srgb, var(--line) 10%, transparent) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(0deg, color-mix(in srgb, white 8%, transparent) 1px, transparent 1px) 0 0 / 100% 8px,
     var(--bg);
   color: var(--fg);
   font-family: var(--mono);
