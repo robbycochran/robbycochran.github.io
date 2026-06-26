@@ -131,7 +131,32 @@ figure {
 
 figure {
   float: right;
-  margin: -77px 0 24px 34px;
+  position: relative;
+  width: fit-content;
+  margin: -77px 0 30px 40px;
+  padding: 7px;
+  border: 1px solid color-mix(in srgb, var(--accent-4) 38%, transparent);
+}
+
+figure::before,
+figure::after {
+  position: absolute;
+  pointer-events: none;
+  content: "";
+}
+
+figure::before {
+  top: -5px;
+  right: 14px;
+  width: 72px;
+  border-top: 1px solid color-mix(in srgb, var(--accent-2) 72%, transparent);
+}
+
+figure::after {
+  right: -5px;
+  bottom: 14px;
+  height: 72px;
+  border-right: 1px solid color-mix(in srgb, var(--accent) 68%, transparent);
 }
 
 img {
