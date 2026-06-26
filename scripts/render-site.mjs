@@ -141,13 +141,12 @@ ${body}
       <div>ROBBYCOCHRAN.COM</div>
       <div>2026</div>
     </div>
-    <nav>
-      <a href="content/resume.md">resume md</a>
-      <a href="pdf/robby_cochran_resume_latex.pdf">resume pdf</a>
-      <a href="content/cv.md">cv md</a>
-      <a href="pdf/robby_cochran_cv_latex.pdf">cv pdf</a>
-      <a href="https://github.com/robbycochran">github</a>
-      <a href="https://www.linkedin.com/in/robertacochran">linkedin</a>
+    <nav aria-label="Links">
+      <span>Resume [<a href="pdf/robby_cochran_resume_latex.pdf">pdf</a>/<a href="content/resume.md">md</a>]</span>
+      <span>CV [<a href="pdf/robby_cochran_cv_latex.pdf">pdf</a>/<a href="content/cv.md">md</a>]</span>
+      <a href="https://github.com/robbycochran">GitHub</a>
+      <a href="https://www.linkedin.com/in/robertacochran">LinkedIn</a>
+      <a href="https://x.com/robbycochran">Twitter</a>
     </nav>
   </header>
   <footer>

@@ -96,28 +96,34 @@ footer {
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0;
+  gap: 0 14px;
   margin: 0 0 22px;
-}
-
-nav a {
-  color: color-mix(in srgb, var(--fg) 70%, var(--accent-3));
-  text-decoration: none;
   text-transform: uppercase;
 }
 
-nav a::before {
+nav a,
+nav span {
+  color: color-mix(in srgb, var(--fg) 70%, var(--accent-3));
+  text-decoration: none;
+}
+
+nav > a::before,
+nav span::before {
   content: "[ ";
   color: color-mix(in srgb, var(--accent-2) 70%, var(--muted));
 }
 
-nav a::after {
+nav > a::after,
+nav span::after {
   content: " ]";
   color: color-mix(in srgb, var(--accent) 70%, var(--muted));
 }
 
-nav a + a {
-  margin-left: 8px;
+nav span a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  text-underline-offset: 2px;
 }
 
 .document {
@@ -170,19 +176,11 @@ h3 {
 }
 
 h1::before {
-  content: "~*~ ";
-  color: var(--accent-2);
-  font-family: ui-monospace, "SFMono-Regular", "Berkeley Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 12px;
-  vertical-align: middle;
+  content: "";
 }
 
 h1::after {
-  content: " ~*~";
-  color: var(--accent);
-  font-family: ui-monospace, "SFMono-Regular", "Berkeley Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 12px;
-  vertical-align: middle;
+  content: "";
 }
 
 h2 {
