@@ -8,6 +8,7 @@
   --accent: #4f9692;
   --accent-2: #bd988f;
   --accent-3: #5f6882;
+  --accent-4: #8b806e;
   --mono: BerkeleyMono, "Berkeley Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
   --measure: 730px;
 }
@@ -72,6 +73,13 @@ nav::before {
   content: "~*~";
 }
 
+nav::after {
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--accent);
+  content: "~";
+}
+
 nav a,
 nav span {
   color: color-mix(in srgb, var(--fg) 70%, var(--accent-3));
@@ -82,7 +90,7 @@ nav a + a::before {
   content: ".";
   display: inline-block;
   margin: 0 8px;
-  color: color-mix(in srgb, var(--accent-2) 70%, var(--muted));
+  color: var(--accent-4);
 }
 
 .document {
@@ -137,7 +145,8 @@ h1::before {
 }
 
 h1::after {
-  content: "";
+  color: var(--accent);
+  content: " █";
 }
 
 h2 {
@@ -166,9 +175,21 @@ p {
   margin-top: 12px;
 }
 
-h1 + p,
-h1 + p + p {
-  color: var(--muted);
+nav + figure + p::before,
+nav + figure + p + p::before,
+nav + figure + p + p + p::before {
+  display: inline-block;
+  margin-right: 7px;
+  color: var(--accent-2);
+  content: ">";
+}
+
+nav + figure + p + p::before {
+  color: var(--accent);
+}
+
+nav + figure + p + p + p::before {
+  color: var(--accent-3);
 }
 
 ul {
@@ -199,7 +220,7 @@ em {
   clear: both;
   display: block;
   margin-top: 28px;
-  color: color-mix(in srgb, var(--muted) 78%, transparent);
+  color: color-mix(in srgb, var(--accent-4) 76%, transparent);
   font-size: 11px;
 }
 
@@ -249,5 +270,6 @@ strong {
     --accent: #64c8c0;
     --accent-2: #d8aa9e;
     --accent-3: #8c96bd;
+    --accent-4: #b1a48c;
   }
 }
