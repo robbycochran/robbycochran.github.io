@@ -97,6 +97,29 @@ nav a + a::before {
   padding: 22px 0 48px;
 }
 
+.document::before,
+.document::after {
+  display: block;
+  height: 1px;
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--accent-2) 68%, transparent),
+      color-mix(in srgb, var(--accent-2) 18%, transparent) 42%,
+      transparent
+    );
+  content: "";
+}
+
+.document::before {
+  margin-bottom: 20px;
+}
+
+.document::after {
+  clear: both;
+  margin-top: 30px;
+}
+
 h1,
 h2,
 h3,
