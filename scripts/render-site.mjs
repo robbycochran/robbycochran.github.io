@@ -115,7 +115,7 @@ const document = `<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV for Robert A. Cochran III: security researcher and engineering leader working across runtime security, Kubernetes, software verification, and AI-agent infrastructure.">
+  <meta name="description" content="CV for Robert A. Cochran III: technical engineering leader working across security systems, Kubernetes, software verification, and AI-agent infrastructure.">
   <title>${escapeHtml(title)}</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles/site.css">

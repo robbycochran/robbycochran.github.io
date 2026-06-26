@@ -1,12 +1,12 @@
 # Robert A. Cochran III
 
-Security researcher and engineering leader | runtime security, Kubernetes, software verification, AI-agent infrastructure
+Technical engineering leader | security systems, Kubernetes, software verification, AI-agent infrastructure
 
 San Francisco, CA / [kudzoo@gmail.com](mailto:kudzoo@gmail.com) / [robbycochran.com](https://www.robbycochran.com/) / [GitHub](https://github.com/robbycochran) / [Google Scholar](https://scholar.google.com/citations?user=qW0wkZIAAAAJ&hl=en) / [LinkedIn](https://www.linkedin.com/in/robertacochran)
 
 ## Profile
 
-Security researcher and engineering leader with a PhD in computer science and a publication record across NDSS, NSDI, POPL, and TISSEC. Work spans symbolic verification of remote client behavior, program synthesis, Kubernetes runtime security, eBPF-based observability, enterprise product architecture, engineering management, and current ACS agentic foundations: secure harness primitives, skills strategy, support triage automation, internal hackathon leadership, and CI-tested agent workflows.
+Technical engineering leader and security systems researcher with a PhD in computer science and a publication record across NDSS, NSDI, POPL, and TISSEC. Work spans symbolic verification of remote client behavior, program synthesis, Kubernetes runtime security, eBPF-based observability, enterprise product architecture, engineering management, customer/design-partner strategy, and current ACS agentic foundations: secure harness primitives, skills strategy, support triage automation, internal hackathon leadership, and CI-tested agent workflows.
 
 ## Interests
 

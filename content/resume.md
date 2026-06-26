@@ -1,12 +1,12 @@
 # Robby Cochran
 
-Staff Engineer / Engineering Manager - Runtime Security, Kubernetes, eBPF, Software Verification, AI-Agent Safety
+Technical engineering leader - Security systems, Kubernetes, AI infrastructure, developer platforms
 
 San Francisco, CA / [kudzoo@gmail.com](mailto:kudzoo@gmail.com) / [robbycochran.com](https://www.robbycochran.com) / [github.com/robbycochran](https://github.com/robbycochran) / [linkedin.com/in/robertacochran](https://www.linkedin.com/in/robertacochran)
 
 ## Profile
 
-Security researcher and engineering leader with a CS PhD and publication record across NDSS, NSDI, POPL, and TISSEC. Builds cloud-native runtime security systems at the boundary of Kubernetes, eBPF observability, policy enforcement, behavioral detection, software verification, and AI-agent safety infrastructure. Experience spans early-stage startup engineering, Red Hat/IBM product integration, distributed-team leadership, large-enterprise design partners, technical promotion mentorship, and secure agent workflow strategy.
+Technical engineering leader with a CS PhD, Staff-level systems/security depth, and people-management experience across startup and enterprise environments. Builds and leads work in technically hard domains: Kubernetes security, eBPF observability, developer platforms, software verification, and AI-agent infrastructure. Open to engineering leadership, Staff+/Principal, forward-deployed engineering, and founder-path roles where product judgment, customer proximity, and deep technical execution all matter.
 
 ## Selected Impact
 
@@ -14,7 +14,7 @@ Security researcher and engineering leader with a CS PhD and publication record 
 - Helped carry StackRox from early startup product through Red Hat acquisition and into RHACS/OpenShift enterprise scale; product context included $0 to $50M+ revenue and 100+ releases.
 - Led ACS agentic foundations: internal hackathon, CI tooling, support triage bots, skills strategy, secure harness primitives, and developer paths from local sandbox to OpenShift execution.
 - Worked with large customers and design partners to translate deployment constraints into roadmap decisions around scale, compliance, performance, platform support, IBM Power/Z, and false-positive reduction.
-- Current thesis: enterprise AI systems need runtime contracts, evaluation harnesses, observability, policy, and behavior-level security controls around agents - not just model-level safety.
+- Current focus: runtime contracts, evaluation harnesses, observability, and policy controls for AI agent and developer infrastructure.
 
 ## Experience
 
