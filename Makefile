@@ -1,4 +1,5 @@
-SITE_MD=content/cv.md
+SITE_MD=content/home.md
+CV_MD=content/cv.md
 SITE_HTML=index.html
 CV_TEX=cv/robby_cochran_cv.tex
 CV_PDF=pdf/robby_cochran_cv_latex.pdf
@@ -13,13 +14,13 @@ all: site
 
 site: $(SITE_HTML)
 
-$(SITE_HTML): $(SITE_MD) scripts/render-site.mjs styles/site.css
+$(SITE_HTML): $(SITE_MD) content/cv.md content/resume.md scripts/render-site.mjs styles/site.css images/robby-film.jpg
 	node scripts/render-site.mjs $(SITE_MD) $(SITE_HTML)
 
 cv-tex: $(CV_TEX)
 
-$(CV_TEX): $(SITE_MD) scripts/render-cv-tex.mjs
-	node scripts/render-cv-tex.mjs $(SITE_MD) $(CV_TEX)
+$(CV_TEX): $(CV_MD) scripts/render-cv-tex.mjs
+	node scripts/render-cv-tex.mjs $(CV_MD) $(CV_TEX)
 
 cv: $(CV_PDF)
 

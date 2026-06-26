@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { basename } from "node:path";
 
-const inputPath = process.argv[2] ?? "content/cv.md";
+const inputPath = process.argv[2] ?? "content/home.md";
 const outputPath = process.argv[3] ?? "index.html";
 
 const source = await readFile(inputPath, "utf8");
@@ -90,6 +90,16 @@ function parseBlocks(markdown) {
       continue;
     }
 
+    const image = /^!\[([^\]]*)\]\(([^)]+)\)$/.exec(line.trim());
+    if (image) {
+      flushParagraph();
+      flushList();
+      blocks.push(
+        `<figure><img src="${escapeHtml(image[2])}" alt="${escapeHtml(image[1])}" loading="eager"></figure>`,
+      );
+      continue;
+    }
+
     const bullet = /^\s*-\s+(.+)$/.exec(line);
     if (bullet) {
       flushParagraph();
@@ -115,24 +125,26 @@ const document = `<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CV for Robert A. Cochran III: technical engineering leader working across security systems, Kubernetes, software verification, and AI-agent infrastructure.">
+  <meta name="description" content="Robby Cochran: technical engineering leader working across security systems, Kubernetes, software verification, and AI-agent infrastructure.">
   <title>${escapeHtml(title)}</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
   <header class="site-header" aria-label="Site">
-    <a class="signal" href="pdf/robby_cochran_resume_latex.pdf">~ SECURITY SYSTEMS / KUBERNETES / AI AGENT INFRA &gt;&gt;</a>
+    <a class="signal" href="pdf/robby_cochran_resume_latex.pdf">~ SYSTEMS / SECURITY / AGENTS &gt;&gt;</a>
     <div class="masthead">
       <a class="wordmark" href="#top">ROBERT A. COCHRAN III <span aria-hidden="true">█</span></a>
       <div>ROBBYCOCHRAN.COM</div>
       <div>2026</div>
     </div>
     <nav>
-      <a href="content/cv.md">cv md</a>
       <a href="content/resume.md">resume md</a>
-      <a href="pdf/robby_cochran_cv_latex.pdf">cv pdf</a>
       <a href="pdf/robby_cochran_resume_latex.pdf">resume pdf</a>
+      <a href="content/cv.md">cv md</a>
+      <a href="pdf/robby_cochran_cv_latex.pdf">cv pdf</a>
+      <a href="https://github.com/robbycochran">github</a>
+      <a href="https://www.linkedin.com/in/robertacochran">linkedin</a>
     </nav>
   </header>
   <main id="top" class="document">

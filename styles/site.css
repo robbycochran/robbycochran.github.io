@@ -97,7 +97,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
-  margin: 0 0 72px;
+  margin: 0 0 44px;
 }
 
 nav a {
@@ -128,8 +128,22 @@ h1,
 h2,
 h3,
 p,
-ul {
+ul,
+figure {
   margin: 0;
+}
+
+figure {
+  margin: 0 0 22px;
+}
+
+img {
+  display: block;
+  width: min(260px, 70vw);
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.04);
+  mix-blend-mode: multiply;
 }
 
 h1,
@@ -142,7 +156,7 @@ h3 {
 }
 
 h1 {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 h1::before {
@@ -156,7 +170,7 @@ h1::after {
 }
 
 h2 {
-  margin-top: 42px;
+  margin-top: 34px;
   padding-top: 14px;
   border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
   color: color-mix(in srgb, var(--accent) 62%, var(--fg));

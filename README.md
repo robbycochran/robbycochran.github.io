@@ -2,7 +2,7 @@
 
 Minimal static site and CV sources.
 
-The website is generated from `content/cv.md`:
+The website is generated from `content/home.md`:
 
 ```bash
 make site
@@ -15,7 +15,7 @@ content/resume.md
 pdf/robby_cochran_resume_latex.pdf
 ```
 
-The full LaTeX CV source is generated from the same Markdown:
+The full LaTeX CV source is generated from `content/cv.md`:
 
 ```bash
 make cv-tex
