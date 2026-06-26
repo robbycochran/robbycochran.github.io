@@ -135,13 +135,12 @@ const document = `<!doctype html>
 ${body}
   </main>
   <header class="site-header" aria-label="Site">
-    <a class="signal" href="pdf/robby_cochran_resume_latex.pdf">~ SYSTEMS / SECURITY / AGENTS &gt;&gt;</a>
     <nav aria-label="Links">
-      <span>Resume [<a href="pdf/robby_cochran_resume_latex.pdf">pdf</a>/<a href="content/resume.md">md</a>]</span>
-      <span>CV [<a href="pdf/robby_cochran_cv_latex.pdf">pdf</a>/<a href="content/cv.md">md</a>]</span>
-      <a href="https://github.com/robbycochran">GitHub</a>
-      <a href="https://www.linkedin.com/in/robertacochran">LinkedIn</a>
-      <a href="https://x.com/robbycochran">Twitter</a>
+      <span>resume [<a href="pdf/robby_cochran_resume_latex.pdf">pdf</a>/<a href="content/resume.md">md</a>]</span>
+      <span>cv [<a href="pdf/robby_cochran_cv_latex.pdf">pdf</a>/<a href="content/cv.md">md</a>]</span>
+      <a href="https://github.com/robbycochran">github</a>
+      <a href="https://www.linkedin.com/in/robertacochran">linkedin</a>
+      <a href="https://x.com/robbycochran">twitter</a>
     </nav>
   </header>
   <footer>

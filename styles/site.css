@@ -63,26 +63,12 @@ footer {
   padding: 6px 0 0;
 }
 
-.signal {
-  display: block;
-  width: fit-content;
-  margin: 0 0 22px;
-  color: color-mix(in srgb, var(--accent-2) 78%, var(--muted));
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.signal:hover {
-  background: var(--fg);
-  color: var(--bg);
-}
-
 nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0 14px;
   margin: 0 0 22px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 nav a,
