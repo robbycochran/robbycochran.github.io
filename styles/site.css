@@ -111,7 +111,7 @@ figure {
 
 figure {
   float: right;
-  margin: 0 0 24px 34px;
+  margin: -52px 0 24px 34px;
 }
 
 img {
@@ -131,9 +131,9 @@ h3 {
 
 h1 {
   font-family: var(--mono);
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 30px;
   margin-bottom: 22px;
   text-transform: uppercase;
 }
@@ -256,7 +256,8 @@ footer::before {
   }
 
   h1 {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
