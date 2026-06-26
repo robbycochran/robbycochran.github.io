@@ -1,14 +1,13 @@
 :root {
   color-scheme: light dark;
-  --bg: #d6d5cb;
+  --bg: #eeece3;
   --fg: #1f1d19;
-  --muted: #625f56;
-  --line: #a9aaa0;
-  --stripe-dark: #4c493f;
-  --stripe-navy: #394565;
-  --accent: #4fb8b0;
-  --accent-2: #c99d91;
-  --accent-3: #394565;
+  --muted: #6d695e;
+  --line: #c9c6b9;
+  --stripe-dark: #8f8c80;
+  --accent: #4f9f9a;
+  --accent-2: #c6a198;
+  --accent-3: #56617f;
   --measure: 730px;
 }
 
@@ -23,18 +22,8 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(90deg,
-      transparent 0 74px,
-      color-mix(in srgb, var(--accent) 10%, transparent) 74px 76px,
-      color-mix(in srgb, var(--stripe-dark) 9%, transparent) 76px 81px,
-      color-mix(in srgb, var(--accent) 8%, transparent) 81px 82px,
-      transparent 82px 196px,
-      color-mix(in srgb, var(--accent-2) 11%, transparent) 196px 198px,
-      color-mix(in srgb, var(--stripe-navy) 10%, transparent) 198px 204px,
-      color-mix(in srgb, var(--accent-2) 8%, transparent) 204px 206px,
-      transparent 206px 312px) 0 0 / 312px 100%,
-    linear-gradient(90deg, color-mix(in srgb, var(--stripe-dark) 7%, transparent) 1px, transparent 1px) 0 0 / 16px 16px,
-    linear-gradient(0deg, color-mix(in srgb, white 18%, transparent) 1px, transparent 1px) 0 0 / 100% 5px,
+    linear-gradient(90deg, color-mix(in srgb, var(--line) 42%, transparent) 1px, transparent 1px) 0 0 / 18px 18px,
+    linear-gradient(0deg, color-mix(in srgb, white 28%, transparent) 1px, transparent 1px) 0 0 / 100% 6px,
     var(--bg);
   color: var(--fg);
   font-family: ui-monospace, "SFMono-Regular", "Berkeley Mono", Menlo, Consolas, "Liberation Mono", monospace;
@@ -49,7 +38,7 @@ body {
 }
 
 a {
-  color: color-mix(in srgb, var(--fg) 82%, var(--accent-3));
+  color: color-mix(in srgb, var(--fg) 90%, var(--accent-3));
   text-decoration: underline;
   text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent);
   text-decoration-thickness: 1px;
@@ -77,7 +66,7 @@ footer {
   display: block;
   width: fit-content;
   margin: 0 0 22px;
-  color: color-mix(in srgb, var(--accent-2) 78%, var(--stripe-navy));
+  color: color-mix(in srgb, var(--accent-2) 78%, var(--muted));
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -112,19 +101,19 @@ nav {
 }
 
 nav a {
-  color: var(--accent-3);
+  color: color-mix(in srgb, var(--fg) 70%, var(--accent-3));
   text-decoration: none;
   text-transform: uppercase;
 }
 
 nav a::before {
   content: "[ ";
-  color: var(--accent-2);
+  color: color-mix(in srgb, var(--accent-2) 70%, var(--muted));
 }
 
 nav a::after {
   content: " ]";
-  color: var(--accent);
+  color: color-mix(in srgb, var(--accent) 70%, var(--muted));
 }
 
 nav a + a {
@@ -170,12 +159,12 @@ h2 {
   margin-top: 42px;
   padding-top: 14px;
   border-top: 1px solid var(--line);
-  color: color-mix(in srgb, var(--accent) 64%, var(--stripe-navy));
+  color: color-mix(in srgb, var(--accent) 62%, var(--fg));
 }
 
 h2::before {
   content: "## ";
-  color: var(--accent-3);
+  color: color-mix(in srgb, var(--accent-3) 58%, var(--muted));
 }
 
 h3 {
@@ -185,7 +174,7 @@ h3 {
 
 h3::before {
   content: "> ";
-  color: var(--accent-3);
+  color: color-mix(in srgb, var(--accent-3) 64%, var(--muted));
 }
 
 p {
@@ -268,7 +257,6 @@ footer::before {
     --muted: #aba79a;
     --line: #625f56;
     --stripe-dark: #302a24;
-    --stripe-navy: #5e6b91;
     --accent: #64c8c0;
     --accent-2: #d8aa9e;
     --accent-3: #8c96bd;
