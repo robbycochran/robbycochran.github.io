@@ -1,6 +1,4 @@
 import { readFile, writeFile } from "node:fs/promises";
-import { basename } from "node:path";
-
 const inputPath = process.argv[2] ?? "content/home.md";
 const outputPath = process.argv[3] ?? "index.html";
 
@@ -118,8 +116,6 @@ function parseBlocks(markdown) {
 
 const title = /^#\s+(.+)$/m.exec(source)?.[1] ?? "Robby Cochran";
 const body = parseBlocks(source);
-const updated = /_Last updated:\s*([^_]+)_/i.exec(source)?.[1]?.trim().replace(/\.$/, "") ?? "";
-
 const document = `<!doctype html>
 <html lang="en">
 <head>
@@ -143,9 +139,6 @@ ${body}
       <a href="https://x.com/robbycochran">twitter</a>
     </nav>
   </header>
-  <footer>
-    <span>Rendered from ${escapeHtml(basename(inputPath))}${updated ? `, updated ${escapeHtml(updated)}` : ""}.</span>
-  </footer>
 </body>
 </html>
 `;

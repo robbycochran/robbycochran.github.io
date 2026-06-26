@@ -53,8 +53,7 @@ a:hover {
 }
 
 .site-header,
-.document,
-footer {
+.document {
   width: min(var(--measure), calc(100vw - 32px));
   margin-inline: auto;
 }
@@ -207,20 +206,15 @@ em {
   font-style: normal;
 }
 
+.document > p:last-child em {
+  display: block;
+  margin-top: 20px;
+  color: color-mix(in srgb, var(--muted) 78%, transparent);
+  font-size: 11px;
+}
+
 strong {
   font-weight: 700;
-}
-
-footer {
-  padding: 0 0 28px;
-  color: var(--muted);
-}
-
-footer::before {
-  display: block;
-  margin-bottom: 12px;
-  border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
-  content: "";
 }
 
 @media (max-width: 620px) {
@@ -229,8 +223,7 @@ footer::before {
   }
 
   .site-header,
-  .document,
-  footer {
+  .document {
     width: calc(100vw - 24px);
   }
 
