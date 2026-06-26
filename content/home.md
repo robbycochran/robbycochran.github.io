@@ -4,10 +4,10 @@
 
 ![Robby Cochran portrait](images/robby-film.jpg)
 
-Technical engineering leader working across security systems, Kubernetes, software verification, and AI-agent infrastructure.
+I work on the parts of security products where systems behavior, developer workflow, and product judgment meet.
 
-I lead a five-engineer C++/Go/Rust team on Red Hat Advanced Cluster Security, with work spanning runtime detection, eBPF observability, product strategy, customer/design-partner feedback, and secure agent workflows.
+At Red Hat, I lead a small C++/Go/Rust team on Advanced Cluster Security. Recent work has been around runtime signals, Kubernetes and OpenShift, eBPF observability, and safer ways to use agents inside engineering workflows.
 
-I am interested in engineering leadership, Staff+/Principal, forward-deployed engineering, and founder-path roles where product judgment and deep systems work reinforce each other.
+My background is in software verification and distributed systems: a PhD from UNC on symbolic verification of remote client behavior, then StackRox from early startup through acquisition. I am drawn to teams that value clear thinking, close contact with users, and software that survives contact with production.
 
 _Last updated: June 2026._
