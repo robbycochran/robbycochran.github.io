@@ -4,10 +4,10 @@
 
 ![Robby Cochran portrait](images/robby-film.jpg)
 
-Robby Cochran is a technical engineering leader and systems/security researcher in San Francisco. He works on Kubernetes runtime security, eBPF observability, developer platforms, and AI-agent infrastructure.
+Technical engineering leader working across security systems, Kubernetes, software verification, and AI-agent infrastructure.
 
-He currently leads a five-engineer C++/Go/Rust team on Red Hat Advanced Cluster Security. His work spans product strategy, customer and design-partner feedback, secure execution harnesses, support automation, and the messy boundary between research ideas and shipped enterprise systems.
+I lead a five-engineer C++/Go/Rust team on Red Hat Advanced Cluster Security, with work spanning runtime detection, eBPF observability, product strategy, customer/design-partner feedback, and secure agent workflows.
 
-Before StackRox and Red Hat, he completed a PhD in computer science at UNC Chapel Hill, studying symbolic verification of remote client behavior in distributed systems. He is interested in roles and projects where product judgment, customer proximity, and deep systems work reinforce each other.
+I am interested in engineering leadership, Staff+/Principal, forward-deployed engineering, and founder-path roles where product judgment and deep systems work reinforce each other.
 
 _Last updated: June 2026._
