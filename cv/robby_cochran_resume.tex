@@ -1,0 +1,92 @@
+
+% Robby Cochran - ATS-oriented LaTeX resume
+% Build: xelatex robby_cochran_resume.tex
+\documentclass[9pt,letterpaper]{extarticle}
+
+\usepackage[letterpaper,margin=0.44in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\baselinestretch}{0.93}
+\setlist[itemize]{leftmargin=1.05em,itemsep=0.4pt,topsep=1.2pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{3pt}{2pt}
+
+\newcommand{\role}[4]{%
+  \textbf{#1} \hfill {\small #2}\\[-1pt]
+  {\small #3} \hfill {\small #4}\vspace{1pt}
+}
+\newcommand{\link}[2]{\href{#1}{#2}}
+
+\begin{document}
+
+{\LARGE \textbf{Robby Cochran}}\\[-1pt]
+{\small Technical engineering leader - Security systems, Kubernetes, AI infrastructure, developer platforms}\\[-1pt]
+{\small San Francisco, CA \;|\; \link{mailto:kudzoo@gmail.com}{kudzoo@gmail.com} \;|\; \link{https://www.robbycochran.com}{robbycochran.com} \;|\; \link{https://github.com/robbycochran}{github.com/robbycochran} \;|\; \link{https://www.linkedin.com/in/robertacochran}{linkedin.com/in/robertacochran}}
+
+\section*{Profile}
+Technical engineering leader with a CS PhD, Staff-level systems/security depth, and people-management experience across startup and enterprise environments. Currently leads a team of five C++/Go/Rust engineers while driving product strategy in Kubernetes security, eBPF observability, developer platforms, and AI-agent infrastructure. Open to engineering leadership, Staff+/Principal, forward-deployed engineering, and founder-path roles where product judgment, customer proximity, and deep technical execution all matter.
+
+\section*{Selected Impact}
+\begin{itemize}
+  \item Built and led StackRox/RHACS runtime-security product work from startup through Red Hat acquisition and OpenShift enterprise scale.
+  \item Lead a five-engineer C++/Go/Rust team and shape product strategy across runtime security, platform support, customer requirements, and AI-assisted workflows.
+  \item Led ACS agentic foundations: hackathon, CI tooling, support triage bots, skills strategy, secure harness primitives, and OpenShift execution paths.
+  \item Current focus: runtime contracts, evaluation harnesses, observability, and policy controls for AI agent and developer infrastructure.
+\end{itemize}
+
+\section*{Experience}
+\role{IBM / Red Hat}{2021 - Present}{Staff Engineer / Engineering Manager, Red Hat Advanced Cluster Security (RHACS)}{San Francisco, CA / Remote}
+\begin{itemize}
+  \item Led RHACS runtime-security roadmap spanning process activity, network security, file activity, behavioral baselines, runtime anomaly detection, Kubernetes-native policy workflows, and developer/analyst experience.
+  \item Lead a team of five C++/Go/Rust engineers and balance people management, architecture, product strategy, and hands-on technical direction.
+  \item Drove eBPF-based runtime visibility design for OpenShift/Kubernetes environments, including collection semantics, performance constraints, platform support, and low false-positive detection goals.
+  \item Built secure AI-agent infrastructure through \link{https://github.com/stackrox/harness-openshell}{harness-openshell}: declarative workflows, credential boundaries, inference routing, sandbox execution, and CI validation.
+  \item Shaped OpenShift-first RHACS strategy around console integration, RBAC, GitOps/policy-as-code, runtime observability, and AI-assisted workflows.
+\end{itemize}
+
+\role{StackRox, Inc. (acquired by Red Hat)}{2017 - 2021}{Staff Software Engineer / Senior Software Engineer / Member of Technical Staff}{Mountain View, CA}
+\begin{itemize}
+  \item Joined an early-stage Kubernetes security startup and built runtime detection/enforcement features for containerized workloads and clusters.
+  \item Advanced baseline-driven process/network visibility and links between observed runtime behavior and policy.
+  \item Worked across product, engineering, and customer-driven security cases with large design partners through acquisition by Red Hat.
+  \item Patent: \link{https://patents.justia.com/patent/11811804}{US 11,811,804}. Talk: \link{https://www.youtube.com/watch?v=LFqWl7XB5Gc}{BSidesSF 2018 - Listen to your Engine}.
+\end{itemize}
+
+\role{University of North Carolina at Chapel Hill}{2008 - 2016}{PhD Researcher, Computer Security and Software Verification}{Chapel Hill, NC}
+\begin{itemize}
+  \item Developed symbolic client verification: server-side techniques for checking whether observed client traffic could have been produced by sanctioned software.
+  \item Built symbolic-execution systems for games, cryptographic protocols, and distributed applications; refactored KLEE internals for parallelism.
+  \item Publications: NDSS 2010 Best Paper / TISSEC 2011, NDSS 2013, and NSDI 2017.
+\end{itemize}
+
+\role{Microsoft Research - Research in Software Engineering (RiSE)}{Summer 2013}{Research Intern}{Redmond, WA}
+\begin{itemize}
+  \item Program synthesis via crowdsourcing; publication: POPL 2015 ``Program Boosting''; patent: \link{https://patents.google.com/patent/US9753696B2}{US 9,753,696}.
+\end{itemize}
+
+\role{Intel Corporation - Visual Computing Group}{2006 - 2007}{Software Engineer}{Hillsboro, OR}
+\begin{itemize}
+  \item Built graphics-hardware analysis tooling to interpret, record, and replay Direct3D/OpenGL API calls for performance analysis of prototype visual-computing hardware.
+\end{itemize}
+
+\section*{Education}
+\textbf{PhD, Computer Science}, University of North Carolina at Chapel Hill, 2016 - Advisor: Michael K. Reiter.\quad
+\textbf{BS, Computer Science}, Clemson University, Magna Cum Laude, 2006.
+
+\section*{Technical Domains}
+{\small Runtime security; Kubernetes; OpenShift; RHACS; eBPF observability; behavioral baselines; policy-as-code; distributed systems; symbolic execution; software verification; formal methods; program synthesis; AI-agent safety; LLM gateways; MCP; Go; C/C++; Python; Rust; Bash; Docker; LLVM; SMT/SAT solvers.}
+
+\end{document}
